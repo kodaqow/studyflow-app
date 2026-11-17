@@ -16,7 +16,7 @@ Aplikace rozlišuje dvě uživatelské role s odlišnými oprávněními:
 
 ## Použité technologie
 
-* **Frontend:** HTML5, CSS3 (vlastní proměnné a responzivní layout), Vanilla JavaScript (ES6+)
+* **Frontend:** HTML5, CSS3 (vlastní proměnné a responzivní layout), Vanilla JavaScript
 * **Backend:** Node.js, Express.js (REST API)
 * **Databáze:** Relační SQL databáze
 * **Autentizace a bezpečnost:** JSON Web Tokens (JWT), hashování hesel pomocí `bcryptjs`, správa konfigurace přes `dotenv`
