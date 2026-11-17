@@ -1,0 +1,19 @@
+# Závislosti
+node_modules/
+
+# Citlivé údaje a proměnné prostředí
+.env
+.env.local
+.env.*.local
+
+# Logy a dočasné soubory
+npm-debug.log*
+*.log
+
+# Systémové a editorové soubory
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Lokální soubory Vercelu
+.vercel/
