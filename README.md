@@ -66,7 +66,7 @@ Pro spuštění projektu na vlastním počítači je potřeba mít nainstalovan�
 
 1. **Naklonování repozitáře**
    ```bash
-   git clone [https://github.com/TVOJE-JMENO/studyflow-app.git](https://github.com/TVOJE-JMENO/studyflow-app.git)
+   git clone [https://github.com/VASE-JMENO/studyflow-app.git](https://github.com/TVOJE-JMENO/studyflow-app.git)
    cd studyflow-app
    ```
 
