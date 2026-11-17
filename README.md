@@ -1,5 +1,10 @@
 # StudyFlow
 
+![Node.js](https://img.shields.io/badge/Node.js-LTS-339933?style=flat&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-4.x-000000?style=flat&logo=express&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Status](https://img.shields.io/badge/Status-In%20Development-2563eb?style=flat)
+
 **StudyFlow** je responzivní webová aplikace pro podporu výuky a efektivního samostudia, vytvořená jako ročníkový projekt. Cílem aplikace je sjednotit studijní materiály a interaktivní nástroje pro procvičování učiva na jedno místo.
 
 ---

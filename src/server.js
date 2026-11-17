@@ -5,11 +5,11 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// 1. Základní middleware
-app.use(express.json()); // Umožní číst JSON tělo požadavků (přihlášení, formuláře)
-app.use(express.static(path.join(__dirname, '../public'))); // Servíruje frontend ze složky public
+// 1. Middleware
+app.use(express.json()); // Čtení JSON těla požadavků
+app.use(express.static(path.join(__dirname, '../public'))); // Připraví frontend
 
-// 2. Testovací endpoint pro ověření chodu API
+// 2. Testovací endpoint
 app.get('/api/status', (req, res) => {
   res.json({
     status: 'ok',
@@ -18,22 +18,29 @@ app.get('/api/status', (req, res) => {
   });
 });
 
-// 3. Budoucí API routy (odkomentuješ, až vytvoříš soubory ve složce src/routes/)
+// 3. Endpointy
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/html/landing-page.html'));
+});
+
+// 4. API routy
 // const authRoutes = require('./routes/auth');
 // const courseRoutes = require('./routes/courses');
 // app.use('/api/auth', authRoutes);
 // app.use('/api/courses', courseRoutes);
 
-// 4. Globální zachycení neočekávaných chyb serveru
+// 5. Ošetření chyb
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ error: 'Interní chyba serveru.' });
 });
 
-// 5. Spuštění serveru
+// 6. Spuštění serveru
 if (require.main === module) {
   app.listen(PORT, () => {
-    console.log(`StudyFlow běží na http://localhost:${PORT}`);
+    const env = process.env.NODE_ENV || 'development';
+    const cas = new Date().toLocaleTimeString('cs-CZ');
+    console.log(`[${cas}] StudyFlow letí na http://localhost:${PORT} 🚀 (${env})`);
   });
 }
 
