@@ -2,6 +2,9 @@
 
 **StudyFlow** je responzivní webová aplikace pro podporu výuky a efektivního samostudia, vytvořená jako ročníkový projekt. Cílem aplikace je sjednotit studijní materiály a interaktivní nástroje pro procvičování učiva na jedno místo.
 
+**Živá ukázka aplikace:** [https://studyflow-edu-app.vercel.app](https://studyflow-edu-app.vercel.app)  
+**Stav serveru (API):** [https://studyflow-edu-app.vercel.app/api/status](https://studyflow-edu-app.vercel.app/api/status)
+
 ---
 
 ## Hlavní funkce
